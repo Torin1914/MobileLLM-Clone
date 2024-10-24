@@ -5,7 +5,7 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
-torchrun --nnodes=1 --nproc_per_node=8 pretrain.py \
+torchrun --nnodes=1 --nproc_per_node=1 pretrain.py \
 --input_model_filename "./configs/125M/" \
 --train_data_local_path "basepath" \
 --output_dir "output_path" \
